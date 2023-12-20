@@ -1,13 +1,13 @@
 import Logo from "../../assets/with-text.png";
-import "./login.css";
+import "./register.css";
 
-export const Login = () => {
+export const Register = () => {
   return (
     <div className="w-[100%] h-screen flex Background">
       <div className="flex flex-col justify-center items-center w-[35%] h-[100%] rounded-[0px_50px_50px_0px] bg-[#5d97ca]">
         <img src={Logo} alt="logo" width={200} className="mr-4" />
         <h1 className="text-gray-700 font-semibold font-sans text-5xl">
-          Welcome Back
+          Welcome Guest
         </h1>
         <p className="text-gray-600 text-md font-medium pt-4">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -16,11 +16,11 @@ export const Login = () => {
       <div className="w-[65%] flex justify-center items-center">
         <div className="flex flex-col justify-between bg-white bg-opacity-90 w-[38%] h-[50%] rounded-[30px] p-8">
           <div className="flex gap-2 flex-col">
-            <h1 className="text-3xl text-gray-700">Login</h1>
+            <h1 className="text-3xl text-gray-700">Register</h1>
             <p className="text-gray-600 text-md font-medium">
               Don't Have an Account?{" "}
               <button className="text-blue-600 font-medium hover:text-blue-500">
-                Go to Register?
+                Go to Login?
               </button>
             </p>
           </div>
