@@ -1,16 +1,17 @@
 import Navbar from "./component/Navbar";
-import { BrowserRouter, Routes, Router, Route } from "react-router-dom";
-import { Login } from "./pages/Login";
+import { Routes, Route } from "react-router-dom";
+import {Login} from "./pages/Login/Login";
 import { useLocation } from "react-router-dom";
+
 
 
 function App() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen mt-4">
+    <div className="min-h-screen w-[100%]">
       <div className="flex flex-col">
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
       <Routes>
         <Route path="/Login" element={<Login />} />
