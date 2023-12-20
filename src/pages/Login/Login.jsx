@@ -3,7 +3,7 @@ import "./login.css";
 
 export const Login = () => {
   return (
-    <div className="w-[100%] h-screen flex">
+    <div className="w-[100%] h-screen flex Background">
       <div className="flex flex-col justify-center items-center w-[35%] h-[100%] rounded-[0px_50px_50px_0px] bg-[#5d97ca]">
         <img src={Logo} alt="logo" width={200} className="mr-4" />
         <h1 className="text-gray-700 font-semibold font-sans text-5xl">
@@ -18,7 +18,7 @@ export const Login = () => {
           <div className="flex gap-2 flex-col">
             <h1 className="text-3xl text-gray-700">Login</h1>
             <p className="text-gray-600 text-md font-medium">
-              Don't Have an Account?{" "}
+              Dont Have an Account?{" "}
               <button className="text-blue-600 font-medium hover:text-blue-500">
                 Go to Register?
               </button>
@@ -51,7 +51,6 @@ export const Login = () => {
               <div className="w-[24px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  enable-background="new 0 0 32 32"
                   viewBox="0 0 32 32"
                   id="lock"
                   fill="#200E32"

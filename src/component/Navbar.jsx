@@ -3,9 +3,13 @@ import Logo from '../assets/with-text.png';
 
 const Navbar = () => {
   const location = useLocation();
-  const isLoginPage = location.pathname.toLowerCase() === "/Login";
+  const isLoginPage = location.pathname.toLowerCase() === "/login";
+  const isRegisterPage = location.pathname.toLowerCase() === "/register";
 
   if (isLoginPage) {
+    return null; // Hide the Navbar on the Login page
+  }
+  if (isRegisterPage) {
     return null; // Hide the Navbar on the Login page
   }
 
@@ -28,7 +32,7 @@ const Navbar = () => {
             <Link to="/register" className="rounded-full bg-blue-500 text-white px-4 py-2">Register</Link>
           </li>
           <li>
-            <Link to="/Login" className="rounded-full bg-green-500 text-white px-4 py-2">Login</Link>
+            <Link to="/login" className="rounded-full bg-green-500 text-white px-4 py-2">Login</Link>
           </li>
         </ul>
       </div>

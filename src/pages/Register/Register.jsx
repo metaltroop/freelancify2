@@ -1,30 +1,38 @@
-import "./register.css"
-import Logo from "../../assets/with-text.png"
+import Logo from "../../assets/with-text.png";
+import "./register.css";
 
-const Register = () => {
+export const Register = () => {
   return (
-    <div className="w-[100%] h-screen flex">
-      <div className="flex flex-col justify-center items-center w-[35%] h-[100%] rounded-[0px_50px_50px_0px] bg-[#5d97ca]">
-        <img src={Logo} alt="logo" width={200} className="mr-4" />
-        <h1 className="text-gray-700 font-semibold font-sans text-5xl">
-          Welcome Back
-        </h1>
-        <p className="text-gray-600 text-md font-medium pt-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-      </div>
+    <div className="w-[100%] h-screen flex Background">
       <div className="w-[65%] flex justify-center items-center">
-        <div className="flex flex-col justify-between bg-white bg-opacity-90 w-[38%] h-[50%] rounded-[30px] p-8">
+        <div className="flex flex-col justify-between bg-white bg-opacity-90 w-[38%] h-[60%] rounded-[30px] p-8">
           <div className="flex gap-2 flex-col">
-            <h1 className="text-3xl text-gray-700">Login</h1>
+            <h1 className="text-3xl text-gray-700">Register</h1>
             <p className="text-gray-600 text-md font-medium">
               Dont Have an Account?{" "}
               <button className="text-blue-600 font-medium hover:text-blue-500">
-                Go to Register?
+                Go to Login?
               </button>
             </p>
           </div>
-          <div className="flex flex-col gap-8 justify-center">
+          <div className="flex flex-col gap-4 justify-center">
+            <div className="flex gap-2 items-center p-5 border-4 border-opacity-25 border-[#545454] rounded-md bg-slate-300 h-16 text-black">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 100 100"
+                id="email"
+              >
+                <path d="M34.05 50 9 66.31V33.69L34.05 50zm31.9 0L91 66.31V33.69L65.95 50zm-3.66 2.39-11.2 7.29c-.33.21-.71.32-1.09.32s-.76-.11-1.09-.32l-11.2-7.29L10.66 70l-1.57 1.02C9.58 73.84 12.04 76 15 76h70c2.96 0 5.42-2.15 5.91-4.98L89.33 70 62.29 52.39zM50 55.61 89.33 30l1.58-1.02C90.42 26.15 87.96 24 85 24H15c-2.96 0-5.42 2.16-5.91 4.98L10.66 30 50 55.61z"></path>
+              </svg>
+              <input
+                type="Email"
+                className="bg-transparent p-2 focus:outline-none"
+                placeholder=" Email Address"
+              />
+            </div>
             <div className="flex gap-2 items-center p-5 border-4 border-opacity-25 border-[#545454] rounded-md bg-slate-300 h-16 text-black">
               {" "}
               <svg
@@ -43,7 +51,7 @@ const Register = () => {
               <input
                 type="text"
                 className="bg-transparent p-2 focus:outline-none"
-                placeholder="James Bond"
+                placeholder="Username"
               />
             </div>
             <div className="flex gap-2 items-center p-5 border-4 border-opacity-25 border-[#545454] rounded-md bg-slate-300 h-16 text-black">
@@ -64,13 +72,27 @@ const Register = () => {
                 placeholder="Password"
               />
             </div>
-            <div className="px-4 flex gap-4"><input type="checkbox"  value="Bike"/> <label htmlFor="">Keep me sign in</label></div>
+
+            <div className="px-4 flex gap-4">
+              <input type="checkbox" value="Bike" />{" "}
+              <label htmlFor=""> I agree the terms and conditions</label>
+            </div>
           </div>
-          <button className="p-2 shadow-2xl text-slate-200 bg-slate-600 rounded-md">Login</button>  
+
+          <button className="p-2 shadow-2xl text-slate-200 bg-slate-600 rounded-md">
+            Login
+          </button>
         </div>
       </div>
+      <div className="flex flex-col justify-center items-center w-[35%] h-[100%] rounded-[50px_0px_0px_50px] bg-[#5d97ca]">
+        <img src={Logo} alt="logo" width={200} className="mr-4" />
+        <h1 className="text-gray-700 font-semibold font-sans text-5xl">
+          Welcome Guest
+        </h1>
+        <p className="text-gray-600 text-md font-medium pt-4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
     </div>
-  )
-}
-
-export default Register
+  );
+};
