@@ -18,7 +18,7 @@ export const Login = () => {
           <div className="flex gap-2 flex-col">
             <h1 className="text-3xl text-gray-700">Login</h1>
             <p className="text-gray-600 text-md font-medium">
-              Dont Have an Account?{" "}
+              Don t Have an Account?{" "}
               <button className="text-blue-600 font-medium hover:text-blue-500">
                 Go to Register?
               </button>

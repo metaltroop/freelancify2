@@ -5,6 +5,7 @@ const Navbar = () => {
   const location = useLocation();
   const isLoginPage = location.pathname.toLowerCase() === "/login";
   const isRegisterPage = location.pathname.toLowerCase() === "/register";
+  const isSigninupPage = location.pathname.toLowerCase() === "/signinup";
 
   if (isLoginPage) {
     return null; // Hide the Navbar on the Login page
@@ -12,9 +13,13 @@ const Navbar = () => {
   if (isRegisterPage) {
     return null; // Hide the Navbar on the Login page
   }
+  if (isSigninupPage) {
+    return null; // Hide the Navbar on the Login page
+  }
+
 
   return (
-    <nav className="bg-[#ffffffd8] border-opacity-25 rounded-full flex justify-between items-center fixed w-[90%] z-20 shadow-xl mt-2 ml-28">
+    <nav className="bg-[#ffffffd8] border-opacity-25 rounded-full flex justify-between items-center fixed w-[90%] z-20 shadow-xl mt-4 ml-28">
       <div>
         <img src={Logo} alt="logo" className="w-20px h-20"/>
       </div>
