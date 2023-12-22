@@ -43,7 +43,7 @@ ${props => (props.signinIn !== true ? `transform: translateX(100%);` : null)}
 `;
 
 export const Form = styled.form`
-background-color: #ffffff;
+background-image : ;
 display: flex;
 align-items: center;
 justify-content: center;
