@@ -1,8 +1,10 @@
 import "./signin.css";
 import Logo from "../../assets/with-text.png";
+
 import { useState } from "react";
 
 const Signin = () => {
+
   const [btnState, setBtnState] = useState(false);
 
   function handleClick() {
@@ -11,13 +13,20 @@ const Signin = () => {
 
   let toggleClassCheck = btnState ? "active" : "";
   let toggleFormCheck = btnState ? "Form" : "";
+  let toggleTranslateCheck = btnState ? "100" : "200";
 
   return (
-    <div className="Background h-[100vh]">
+    <div className="Background h-[100vh] overflow-x-clip">
+      <div
+        className={`translate-x-${toggleTranslateCheck} transition-all duration-500`}
+      >
+        <div className=" z-[5] absolute w-[600px] h-screen rounded-[50px_50px_50px_50px] bg-[#5d97ca] "></div>
+      </div>
+
       <div className="">
         <div className={`Register${toggleFormCheck}`}>
           <div className="flex">
-            <div className="flex LoginOverlay flex-col justify-center items-center w-[35%] h-[100vh] rounded-[0px_50px_50px_0px] bg-[#5d97ca]">
+            <div className="z-[10] flex LoginOverlay flex-col justify-center items-center w-[35%] h-[100vh] rounded-[0px_50px_50px_0px] transition-all duration-500 ">
               <img src={Logo} alt="logo" width={200} className="mr-4" />
               <h1 className="text-gray-700 font-semibold font-sans text-5xl">
                 Welcome Back
@@ -97,7 +106,7 @@ const Signin = () => {
         <div className={`RegisterForm${toggleClassCheck}`}>
           <div className="w-[100%] flex">
             <div className="mt-60 ml-80 w-[65%]  justify-center items-center">
-              <div className="  flex  flex-col gap-10  justify-between bg-white bg-opacity-90 w-[38%] h-[60%] rounded-[30px] p-8">
+              <div className="  flex  flex-col gap-10  justify-between bg-white bg-opacity-90 w-[38%] h-[75%] rounded-[30px] p-8">
                 <div className="flex gap-2 flex-col">
                   <h1 className="text-3xl text-gray-700">Register</h1>
                   <p className="text-gray-600 text-md font-medium">
@@ -179,7 +188,7 @@ const Signin = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center w-[35%] h-[100vh] rounded-[50px_0px_0px_50px] bg-[#5d97ca]">
+            <div className="z-[10] flex flex-col justify-center items-center w-[35%] h-[100vh] rounded-[50px_0px_0px_50px] transition-all duration-700">
               <img src={Logo} alt="logo" width={200} className="mr-4" />
               <h1 className="text-gray-700 font-semibold font-sans text-5xl">
                 Welcome Guest
