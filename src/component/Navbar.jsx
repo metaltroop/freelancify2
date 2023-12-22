@@ -6,6 +6,7 @@ const Navbar = () => {
   const isLoginPage = location.pathname.toLowerCase() === "/login";
   const isRegisterPage = location.pathname.toLowerCase() === "/register";
   const isSigninupPage = location.pathname.toLowerCase() === "/signinup";
+  const isSigninPage = location.pathname.toLowerCase() === "/signin";
 
   if (isLoginPage) {
     return null; // Hide the Navbar on the Login page
@@ -14,6 +15,9 @@ const Navbar = () => {
     return null; // Hide the Navbar on the Login page
   }
   if (isSigninupPage) {
+    return null; // Hide the Navbar on the Login page
+  }
+  if (isSigninPage) {
     return null; // Hide the Navbar on the Login page
   }
 

@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import Signinup from "./pages/SignINUP/Signinup";
 import Landing from "./pages/Landing";
+import Signin from "./pages/Login/Signin";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
         />
         <Route path="/signinup" element={<Signinup />} />
         <Route path="/Landing" element={<Landing />} />
+        <Route path="/Signin" element={<Signin />} />
       
         <Route path="/" element={<Navigate to="/" replace />} />
       </Routes>
