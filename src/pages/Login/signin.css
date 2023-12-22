@@ -40,3 +40,20 @@
 
     display: inherit;
 }
+
+.LoginOverlay{
+    display: inherit;
+
+}
+
+.LoginOverlay ::after{
+    display: none;
+}
+
+.LoginForm{
+    display:inherit;
+}
+
+.LoginForm::after{
+    display: none;
+}
