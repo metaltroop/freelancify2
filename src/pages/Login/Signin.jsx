@@ -97,7 +97,7 @@ const Signin = () => {
         <div className={`RegisterForm${toggleClassCheck}`}>
           <div className="w-[100%] flex">
             <div className="mt-60 ml-80 w-[65%]  justify-center items-center">
-              <div className="  flex  flex-col gap-10  justify-between bg-white bg-opacity-90 w-[38%] h-[60%] rounded-[30px] p-8">
+              <div className="  flex  flex-col gap-10  justify-between bg-white bg-opacity-90 w-[38%] h-[75%] rounded-[30px] p-8">
                 <div className="flex gap-2 flex-col">
                   <h1 className="text-3xl text-gray-700">Register</h1>
                   <p className="text-gray-600 text-md font-medium">
