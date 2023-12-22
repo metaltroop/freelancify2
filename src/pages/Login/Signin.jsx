@@ -1,8 +1,10 @@
 import "./signin.css";
 import Logo from "../../assets/with-text.png";
+
 import { useState } from "react";
 
 const Signin = () => {
+
   const [btnState, setBtnState] = useState(false);
 
   function handleClick() {
@@ -11,13 +13,20 @@ const Signin = () => {
 
   let toggleClassCheck = btnState ? "active" : "";
   let toggleFormCheck = btnState ? "Form" : "";
+  let toggleTranslateCheck = btnState ? "100" : "200";
 
   return (
-    <div className="Background h-[100vh]">
+    <div className="Background h-[100vh] overflow-x-clip">
+      <div
+        className={`translate-x-${toggleTranslateCheck} transition-all duration-500`}
+      >
+        <div className=" z-[5] absolute w-[600px] h-screen rounded-[50px_50px_50px_50px] bg-[#5d97ca] "></div>
+      </div>
+
       <div className="">
         <div className={`Register${toggleFormCheck}`}>
           <div className="flex">
-            <div className="flex LoginOverlay flex-col justify-center items-center w-[35%] h-[100vh] rounded-[0px_50px_50px_0px] bg-[#5d97ca]">
+            <div className="z-[10] flex LoginOverlay flex-col justify-center items-center w-[35%] h-[100vh] rounded-[0px_50px_50px_0px] transition-all duration-500 ">
               <img src={Logo} alt="logo" width={200} className="mr-4" />
               <h1 className="text-gray-700 font-semibold font-sans text-5xl">
                 Welcome Back
@@ -179,7 +188,7 @@ const Signin = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center w-[35%] h-[100vh] rounded-[50px_0px_0px_50px] bg-[#5d97ca]">
+            <div className="z-[10] flex flex-col justify-center items-center w-[35%] h-[100vh] rounded-[50px_0px_0px_50px] transition-all duration-700">
               <img src={Logo} alt="logo" width={200} className="mr-4" />
               <h1 className="text-gray-700 font-semibold font-sans text-5xl">
                 Welcome Guest
