@@ -1,11 +1,11 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Login } from "./pages/Login/Login";
-import { Register } from "./pages/Register/Register";
+
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import Signinup from "./pages/SignINUP/Signinup";
 import Landing from "./pages/Landing";
 import Signin from "./pages/Login/Signin";
+import Signup from "./pages/Register/Signup";
 
 function App() {
   const location = useLocation();
@@ -16,13 +16,13 @@ function App() {
       <Landing/>
       <Routes location={location}>
         <Route
-          path="/Login"
-          element={<Login direction={direction} setDirection={setDirection} />}
+          path="/Signin"
+          element={<Signin direction={direction} setDirection={setDirection} />}
         />
         <Route
-          path="/Register"
+          path="/Signup"
           element={
-            <Register direction={direction} setDirection={setDirection} />
+            <Signup direction={direction} setDirection={setDirection} />
           }
         />
         <Route path="/signinup" element={<Signinup />} />

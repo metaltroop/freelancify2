@@ -7,6 +7,7 @@ const Navbar = () => {
   const isRegisterPage = location.pathname.toLowerCase() === "/register";
   const isSigninupPage = location.pathname.toLowerCase() === "/signinup";
   const isSigninPage = location.pathname.toLowerCase() === "/signin";
+  const isSginupPage = location.pathname.toLowerCase()==="/signup"
 
   if (isLoginPage) {
     return null; // Hide the Navbar on the Login page
@@ -19,6 +20,9 @@ const Navbar = () => {
   }
   if (isSigninPage) {
     return null; // Hide the Navbar on the Login page
+  }
+  if (isSginupPage){
+    return null;
   }
 
 
@@ -38,10 +42,10 @@ const Navbar = () => {
       <div className="flex justify-between items-center mr-6">
         <ul className="flex gap-3">
           <li>
-            <Link to="/register" className="rounded-full bg-blue-500 text-white px-4 py-2">Register</Link>
+            <Link to="/signup" className="rounded-full bg-blue-500 text-white px-4 py-2">Register</Link>
           </li>
           <li>
-            <Link to="/login" className="rounded-full bg-green-500 text-white px-4 py-2">Login</Link>
+            <Link to="/signin" className="rounded-full bg-green-500 text-white px-4 py-2">Login</Link>
           </li>
         </ul>
       </div>
