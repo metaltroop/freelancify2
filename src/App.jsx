@@ -27,7 +27,7 @@ function App() {
         <Route path="/Landing" element={<Landing />} />
         <Route path="/Signin" element={<Signin />} />
       
-        <Route path="/" element={<Navigate to="/" replace />} />
+        <Route path="/" element={<Navigate to="/landing" replace />} />
       </Routes>
     </div>
 

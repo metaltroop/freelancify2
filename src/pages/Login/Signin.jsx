@@ -188,7 +188,7 @@ const Signin = () => {
               </div>
             </div>
 
-            <div className="z-[10] flex flex-col justify-center items-center w-[35%] h-[100vh] rounded-[50px_0px_0px_50px] transition-all duration-700">
+            <div id="registertext" className="z-[10] flex flex-col justify-center items-center w-[35%] h-[100vh] rounded-[50px_0px_0px_50px] transition-all duration-700">
               <img src={Logo} alt="logo" width={200} className="mr-4" />
               <h1 className="text-gray-700 font-semibold font-sans text-5xl">
                 Welcome Guest
