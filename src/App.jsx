@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
-import Landing from "./pages/Landing";
+import Landing from "./pages/Landing/Landing";
 import Signin from "./pages/Login/Signin";
 import Signup from "./pages/Register/Signup";
 
