@@ -11,7 +11,7 @@ function Landing() {
 
         <div className="h-[100dvh] flex flex-col items-center justify-center px-4 md:flex-row md:px-16">
           <div className="text-center md:text-left md:w-1/2">
-            <h1 className="text-4xl font-bold text-[#252525] md:text-4xl lg:text-8xl">
+            <h1 className="text-4xl font-bold text-[#252525] md:text-4xl lg:text-6xl">
               Are You Looking For Freelancers?
             </h1>
 
@@ -78,11 +78,13 @@ function Landing() {
         </div>
       </div>
       <section className="h-screen">
-        <div className="bg-white  grid md:gap-3 gap-8 place-items-center md:grid-cols-3 grid-cols-1">
+        <div className="bg-white px-20 pt-20 grid lg:gap-8 md:gap-3 gap-8 place-items-center md:grid-cols-1 lg:grid-cols-3 grid-cols-1">
           {" "}
-          <div className="w-80 h-80 bg-slate-400"></div>{" "}
-          <div className="w-80 h-80 bg-slate-400"></div>{" "}
-          <div className="w-80 h-80 bg-slate-400"></div>
+          <div className="w-80 h-80 rounded-lg bg-gray-200">
+          
+          </div>{" "}
+          <div className="w-80 h-80 bg-gray-200 "></div>{" "}
+          <div className="w-80 h-80 bg-gray-200"></div>
         </div>
       </section>
     </>
