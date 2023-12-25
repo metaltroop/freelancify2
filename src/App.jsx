@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-
+import Footer from "./component/footer";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
@@ -29,6 +29,7 @@ function App() {
       
         <Route path="/" element={<Navigate to="/landing" replace />} />
       </Routes>
+      <Footer />
     </div>
 
   );
